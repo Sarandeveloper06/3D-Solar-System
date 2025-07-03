@@ -205,4 +205,13 @@ window.addEventListener('resize', () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+// Toggle control panel visibility
+document.getElementById('toggle-panel').addEventListener('click', () => {
+  const panel = document.getElementById('controls');
+  panel.classList.toggle('minimized');
+
+  const toggleBtn = document.getElementById('toggle-panel');
+  toggleBtn.textContent = panel.classList.contains('minimized') ? '🔽 Show Controls' : '☰';
+});
+
 
