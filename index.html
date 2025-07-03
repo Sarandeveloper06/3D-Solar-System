@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Solar System | Frontend Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div id="tooltip"></div>
+
+  <div id="controls" class="dark-theme">
+    <h2>Solar System Controls</h2>
+    <div class="control-row">
+      <button id="pause-button">Pause</button>
+      <button id="theme-button">Light Theme</button>
+      <button id="reset-button">Reset Speeds</button>
+    </div>
+    <hr />
+    <p>Orbital Speed</p>
+    <div class="slider-container"><label for="mercury">Mercury</label><input type="range" id="mercury" min="0.1" max="10" value="4.7" step="0.1" /></div>
+    <div class="slider-container"><label for="venus">Venus</label><input type="range" id="venus" min="0.1" max="10" value="3.5" step="0.1" /></div>
+    <div class="slider-container"><label for="earth">Earth</label><input type="range" id="earth" min="0.1" max="10" value="2.9" step="0.1" /></div>
+    <div class="slider-container"><label for="mars">Mars</label><input type="range" id="mars" min="0.1" max="10" value="2.4" step="0.1" /></div>
+    <div class="slider-container"><label for="jupiter">Jupiter</label><input type="range" id="jupiter" min="0.1" max="10" value="1.3" step="0.1" /></div>
+    <div class="slider-container"><label for="saturn">Saturn</label><input type="range" id="saturn" min="0.1" max="10" value="0.9" step="0.1" /></div>
+    <div class="slider-container"><label for="uranus">Uranus</label><input type="range" id="uranus" min="0.1" max="10" value="0.6" step="0.1" /></div>
+    <div class="slider-container"><label for="neptune">Neptune</label><input type="range" id="neptune" min="0.1" max="10" value="0.5" step="0.1" /></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
