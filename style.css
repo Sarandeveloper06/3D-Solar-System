@@ -119,3 +119,25 @@ input[type="range"] {
 #controls.light-theme button:hover {
   background-color: #6a6ad5;
 }
+#toggle-panel {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #4a4a88;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hide content when minimized */
+#controls.minimized h2,
+#controls.minimized .control-row,
+#controls.minimized hr,
+#controls.minimized p,
+#controls.minimized .slider-container {
+  display: none;
+}
+
